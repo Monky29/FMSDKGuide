@@ -2,9 +2,9 @@
 
 ## 什么是FengMap JavaScript SDK
 
-Fengmap JavaScript SDK是一套基于 WebGL 和 HTML5 技术的浏览器应用程序接口。您可以使用该 SDK 开发适用于 web 端的地图应用，通过调用地图接口，您可以轻松访问蜂鸟公开地图资源、私有云端地图资源、离线地图数据，快速构建功能丰富、交互性强、适用于各个行业的室内地图类应用程序，或者快速将室内地图集成到您的应用程序中。
+Fengmap JavaScript SDK 是一套基于 WebGL 和 HTML5 技术的浏览器应用程序接口。您可以使用该 SDK 开发适用于 web 端的地图应用，通过调用地图接口，您可以轻松访问蜂鸟公开地图资源、私有云端地图资源、离线地图数据，快速构建功能丰富、交互性强、适用于各个行业的室内地图类应用程序，或者快速将室内地图集成到您的应用程序中。
 
-如果您有移动端 webapp 开发需要，Fengmap JavaScript SDK还可以帮助您方便快速的开发适用于移动端浏览器、微信、QQ的应用程序，或者将室内地图完美的集成到您的 webapp 中。
+如果您有移动端 webapp 开发需要，Fengmap JavaScript SDK 还可以帮助您方便快速的开发适用于移动端浏览器、微信、QQ的应用程序，或者将室内地图完美的集成到您的 webapp 中。
 
 ## 基本
 
@@ -12,11 +12,11 @@ Fengmap JavaScript SDK是一套基于 WebGL 和 HTML5 技术的浏览器应用�
 
 ## 准备开发环境
 
-您可以下载安装并使用 Visual studio、Eclipse、Sublime Text、Webstorm 等常用web开发工具。
+您可以下载安装并使用 Visual studio、Eclipse、Sublime Text、Webstorm 等常用 web 开发工具。
 
 ## 准备SDK
 
-您可以从蜂鸟云平台相关下载中按需下载Fengmap JavaScript SDK开发资源，其中示例下载内容包括：地图显示、事件、覆盖物、控件、搜索、路径规划、模拟导航等。
+您可以从蜂鸟云平台相关下载中按需下载Fengmap JavaScript SDK 开发资源，其中示例下载内容包括：地图显示、事件、覆盖物、控件、搜索、路径规划、模拟导航等。
 
 可通过官网浏览在线体验：[在线体验](http://developer.fengmap.com/fmAPI/help-fmdemo.html#FMDemo) 参考相关功能
 
@@ -32,10 +32,10 @@ Fengmap JavaScript SDK是一套基于 WebGL 和 HTML5 技术的浏览器应用�
 
 ### 密钥的意义
 
-如需使用 Fengmap JavaScript SDK，您必须在蜂鸟云控制台上创建您的应用项目，并添加可用的JavaScript SDK密钥。您需要的SDK密钥类型是JavaScript SDK密钥。
+如需使用 Fengmap JavaScript SDK，您必须在蜂鸟云控制台上创建您的应用项目，并添加可用的 JavaScript SDK 密钥。您需要的SDK密钥类型是 JavaScript SDK 密钥。
 请注意：
 
-1、蜂鸟云平台中的一个应用程序对应唯一一个Fengmap JavaScript key以及应用名称（appName）且全平台唯一。
+1、蜂鸟云平台中的一个应用程序对应唯一一个 Fengmap JavaScript key 以及应用名称（appName）且全平台唯一。
 
 2、Fengmap JavaScript SDK 需验证 key 和 appName ，保证当前 web 应用程序运行的域名在该 key 对应的白名单内，同时当前web应用程序名称和 appName 一致，且该 web 应用程序使用的 Fengmap 地图为相应用户已发布的地图。
 
@@ -45,56 +45,43 @@ Fengmap JavaScript SDK是一套基于 WebGL 和 HTML5 技术的浏览器应用�
 
 1.登录蜂鸟云账号。
 
-![登录蜂鸟账号](https://raw.githubusercontent.com/Qun88/FMSDKGuide/master/assets/Login.png)
-
 2.通过蜂鸟云 ->开发
 -> 创建应用，创建一个新应用。如果您之前已经创建过应用，跳过这个步骤。
 
-![通过蜂鸟云](https://raw.githubusercontent.com/Monky29/FMSDKGuide/master/assets/Fengmap.png)
-
 3、在创建的应用上点击“添加key”按钮，在弹出的对话框中依次：输入key名称、选择SDK平台、输入白名单。如下图所示：
-
-![在创建的应用上点击添加key](https://raw.githubusercontent.com/Qun88/FMSDKGuide/master/assets/AppKey.png)
 
 4、完成对话框填写并阅读同意蜂鸟云服务条款之后，点击确定即可完成密钥申请。如下图所示：
 
-![read2](https://raw.githubusercontent.com/Monky29/FMSDKGuide/master/assets/Appnamekey.png)
-
 ## 配置工程
 
-开发者可通过 Sublime Text、Eclipse、Visual Studio等html文本编辑器编写 web 程序和站点。在项目中添加 Fengmap JavaScript SDK 文件，在页面代码中添加 fengmap.min.js 引用，结合HTML，JavaScript等前端技术即可实现对 Fengmap 地图web端的展示与应用等功能。本章节介绍使用 Fengmap JavaScript SDK 的开发流程。
+开发者可通过 Sublime Text、Eclipse、Visual Studio 等 html 文本编辑器编写 web 程序和站点。在项目中添加 Fengmap JavaScript SDK 文件，在页面代码中添加 fengmap.min.js 引用，结合HTML，JavaScript 等前端技术即可实现对 Fengmap 地图 web 端的展示与应用等功能。本章节介绍使用 Fengmap JavaScript SDK 的开发流程。
 
 ### 创建web站点
 
 该站点需包含以下文件：
 
 • 存放 JavaScript SDK 库即 fengmap.min.js 的 lib 文件夹。
-• 前端展示的html页面。
-• 存储离线 Fengmap 数据文件夹data（可选文件，注：使用离线数据时候必须存在）。
-下图为一个 helloFengMap 的站点目录结构示例：
-
-![image](https://raw.githubusercontent.com/Monky29/FMSDKGuide/master/assets/contents.png)
+• 前端展示的 html 页面。
+• 存储离线 Fengmap 数据文件夹 data（可选文件，注：使用离线数据时候必须存在）。
 
 ### 编写html页面代码
 
-在 helloFengMap.html 页面引入Fengmap JavaScript SDK 库，并添加地图显示代码。可根据Hello Fengmap 指导编写简单显示fengmap地图页面代码。
+在 helloFengMap.html 页面引入Fengmap JavaScript SDK 库，并添加地图显示代码。可根据 Hello Fengmap 指导编写简单显示 fengmap 地图页面代码。
 
 ## 发布站点
 
 页面完成后发布至 tomcat 服务器或 IIS 服务器，浏览器中输入正确的地址即可浏览页面。
 
 注：地图数据格式为*.fmap文件类型。主题数据是包含*.theme配置文件和*.fmi公共设施图标的文件夹。
-如果站点发布到IIS或Tomcat时发生浏览错误，可以尝试设置站点的MIME类型解决。".fmap"的MIME类型为"application/octet-stream",".fmi"的MIME类型为"image/png",".theme"的MIME类型为"text/plain"。如下图所示：
-
-![image](https://raw.githubusercontent.com/Monky29/FMSDKGuide/master/assets/dataform.png)
+如果站点发布到 IIS 或 Tomcat 时发生浏览错误，可以尝试设置站点的 MIME 类型解决。".fmap"的MIME类型为"application/octet-stream",".fmi"的MIME类型为"image/png",".theme"的MIME类型为"text/plain"。如下图所示：
 
 ## 开发建议
 
-指南中讲解详细程度很难照顾基础不同的开发者，阐述风格也很难兼容每个读者，但是案例源码都可以解决这些问题。对于初次使用FengMap SDK的开发者，一定要把案例源码和开发指南结合起来学习，这样才能更好的理解。
+指南中讲解详细程度很难照顾基础不同的开发者，阐述风格也很难兼容每个读者，但是案例源码都可以解决这些问题。对于初次使用 FengMap SDK 的开发者，一定要把案例源码和开发指南结合起来学习，这样才能更好的理解。
 
 ## 开发条件
 
-本指南是面向 Web开发者在建立Fengmap地图应用时使用的快速入门指南。
+本指南是面向 Web 开发者在建立 Fengmap 地图应用时使用的快速入门指南。
 
 ## 引入方式
 
@@ -104,9 +91,9 @@ Fengmap JavaScript SDK是一套基于 WebGL 和 HTML5 技术的浏览器应用�
 
 核心模块 fengmap.core，使用 Fengmap SDK 所必须的核心功能模块，需要在其他模块前引用。包含常规渲染和数据解析，以及通用功能，如：地图显示、事件、覆盖物、搜索查询等功能，如果您的地图仅用于大屏展示，只引入核心模块即可满足需求；
 
-计算模块 fengmap.analyze，及导航模块 fengmap.navi， 如果除基础展示外，还要使用路径分析计算、真实定位导航或模拟导航功能，必须再加载该模块；
+计算模块 fengmap.analyze ，及导航模块 fengmap.navi， 如果除基础展示外，还要使用路径分析计算、真实定位导航或模拟导航功能，必须再加载该模块；
 
-控件模块 fengmap.control， 如果要使用 SDK 内置的地图控件，须在核心功能模块基础上加载该模块，主要包含楼层控件、指北针、相机切换、信息窗等控件；
+控件模块 fengmap.control ， 如果要使用 SDK 内置的地图控件，须在核心功能模块基础上加载该模块，主要包含楼层控件、指北针、相机切换、信息窗等控件；
 
 ### 常规页面引入方式
 
@@ -248,32 +235,32 @@ map.openMapById(fmapID);
 | mapServerURL     | string      | 设置地图数据的路径，如不设置，则从蜂鸟视图服务器上获取在线地图 |
 | mapThemeURL      | string      | 设置主题数据的路径，如不设置，则从蜂鸟视图服务器上获取在线主题 |
 | defaultThemeName | string      | 设置默认主题名称，默认为‘2001’，设置后主题对应文件夹路径为：options.mapThemeURL+options.defaultThemeName。 |
-|useStoreApply|boolean|开启支持主题中模型的自定义样式，默认为true。  |
-|defaultVisibleGroups|array | 初始显示楼层ID数组。 |
-|defaultFocusGroup|int |初始聚焦楼层ID。 |
-|defaultViewCenter|json|初始化地图中心点坐标。如：{x:12961580.734922647,y:4861883.567717729} |
-|modelSelectedEffect|boolean|支持单击模型高亮，false为单击时模型不高亮 |
-|modelHoverEffect|boolean|支持悬停模型高亮或拾取，false为悬停时模型不高亮。默认值：false |
-|modelHoverTime|boolean |悬停时间触发时间，默认1000,参数数值表示毫秒时长。 |
-|focusAlphaMode|boolean |是否对不聚焦图层启用透明设置 默认为true |
-|focusAlpha|float|对不聚焦图层启用透明设置 默认为0.1。值范围为 0-1。此属性只有当options.focusAlphaMode = ture是有效 |
-|focusAnimateMode|boolean|是否开启聚焦图层切换的动画显示。默认true |
-|defaultViewMode|fengmap.FMViewMode|初始二维还是三维状态， | |fengmap.FMViewMode.MODE_2D&#124;&#124;fengmap.FMViewMode.MODE_3D ,默认3维显示。|
-|viewModeAnimateMode|boolean|是否启用2D，3D模式切换时的动画效果。默认true |
-|moveToAnimateMode|boolean|是否启用拾取地图物体时相机的移动动画效果。 默认true。 |
-|scaleToAnimateMode|boolean|是否启用地图物缩放的动画效果。 默认true。 |
-|defaultMapScaleLevel|number|设置地图初始显示比例尺级别。范围为1-29之间的整数值。如29级的比例尺为1:1厘米。 |
-|mapScaleLevelRange|array|设置比例尺级别可缩放范围， 通常室内地图使用到的范围为16级到23级。即：[16,23]。 |
-|defaultMapScale|number|设置地图初始显示自定义比例尺级别。如设置1000，为1:1000（厘米）的显示状态。defaultMapScale的优先级比defaultMapScaleLevel的优先级高。 |
-|mapScaleRange|array|设置自定义比例尺范围，单位（厘米），如[200,4000]。 |
-|compassOffset|array|设置初始指南针的偏移量，默认为[28, 20],左：28px,上：20px。 |
-|compassSize|number |设置指南针大小,默认50px。 |
-|defaultGroupSpace|number|设置初始地图的楼层间距,默认50。 |
-|enabledPanRange|boolean|是否开启平移地图范围限制,默认为false |
-|tile|boolean|是否访问分层数据,默认为false。 |
-|defaultBackgroundColor|int | string|默认背景颜色: 0xff00ff, '#00ff00' |
-|defaultBackgroundAlpha|int|默认背景透明度: 0 ~ 1 |
-|defaultControlsPose|number|地图默认旋转角度，默认为-15度。 |
+|useStoreApply     |boolean      |开启支持主题中模型的自定义样式，默认为true。  |
+|defaultVisibleGroups|array      | 初始显示楼层ID数组。 |
+|defaultFocusGroup |number       |初始聚焦楼层ID。 |
+|defaultViewCenter |json         |初始化地图中心点坐标。如：{x:12961580.734922647,y:4861883.567717729} |
+|modelSelectedEffect|boolean     |支持单击模型高亮，false为单击时模型不高亮 |
+|modelHoverEffect  |boolean      |支持悬停模型高亮或拾取，false为悬停时模型不高亮。默认值：false |
+|modelHoverTime    |boolean      |悬停时间触发时间，默认1000,参数数值表示毫秒时长。 |
+|focusAlphaMode    |boolean      |是否对不聚焦图层启用透明设置 默认为true |
+|focusAlpha        |float        |对不聚焦图层启用透明设置 默认为0.1。值范围为 0-1。此属性只有当options.focusAlphaMode = ture是有效 |
+|focusAnimateMode  |boolean      |是否开启聚焦图层切换的动画显示。默认true |
+|defaultViewMode   |fengmap.FMViewMode|初始二维还是三维状态， | |fengmap.FMViewMode.MODE_2D&#124;&#124;fengmap.FMViewMode.MODE_3D ,默认3维显示。|
+|viewModeAnimateMode|boolean     |是否启用2D，3D模式切换时的动画效果。默认true |
+|moveToAnimateMode |boolean      |是否启用拾取地图物体时相机的移动动画效果。 默认true。 |
+|scaleToAnimateMode|boolean      |是否启用地图物缩放的动画效果。 默认true。 |
+|defaultMapScaleLevel|number     |设置地图初始显示比例尺级别。范围为1-29之间的整数值。如29级的比例尺为1:1厘米。 |
+|mapScaleLevelRange|array        |设置比例尺级别可缩放范围， 通常室内地图使用到的范围为16级到23级。即：[16,23]。 |
+|defaultMapScale   |number       |设置地图初始显示自定义比例尺级别。如设置1000，为1:1000（厘米）的显示状态。defaultMapScale的优先级比defaultMapScaleLevel的优先级高。 |
+|mapScaleRange     |array        |设置自定义比例尺范围，单位（厘米），如[200,4000]。 |
+|compassOffset     |array        |设置初始指南针的偏移量，默认为[28, 20],左：28px,上：20px。 |
+|compassSize       |number       |设置指南针大小,默认50px。 |
+|defaultGroupSpace |number       |设置初始地图的楼层间距,默认50。 |
+|enabledPanRange   |boolean      |是否开启平移地图范围限制,默认为false |
+|tile|boolean      |是否访问分层数据,默认为false。 |
+|defaultBackgroundColor|number\string   |默认背景颜色: 0xff00ff, '#00ff00' |
+|defaultBackgroundAlpha|number      |默认背景透明度: 0 ~ 1 |
+|defaultControlsPose|number      |地图默认旋转角度，默认为-15度。 |
 |defaultLabelLanguage|fengmap.FMLanguageType|默认label的语言类型，显示英文或者中文 |
 
 ## 地图加载
@@ -309,22 +296,26 @@ Fengmap JavaScript SDK 提供两种类型的楼层切换控件，scrollGroupsCon
 
 ```javascript
 //楼层控制控件配置参数
-var ctlOpt = new fengmap.controlOptions({
-    position: fengmap.controlPositon.RIGHT_TOP,//默认在右上角
-    showBtnCount: 7,  //默认显示楼层的个数
-    allLayer:false,   //初始是否是多层显示，默认单层显示
-    needAllLayerBtn: true, //是否显示多层/单层切换按钮
-    //位置x,y的偏移量
-    offset: {
-        x: -20,
-        y: 20
-    }
-});
-var groupControl;
-//地图加载完成回掉方法
+ var scrollFloorCtlOpt = {
+       //默认在右上角
+       position: fengmap.FMControlPosition.RIGHT_TOP,
+       //初始楼层按钮显示个数配置。默认显示5层,其他的隐藏，可滚动查看
+       showBtnCount: 6,
+       //初始是否是多层显示，默认单层显示false
+       allLayer: false,
+       //是否显示多层/单层切换按钮
+       needAllLayerBtn: true,
+       //位置x,y的偏移量
+       offset: {
+           x: -20,
+           y: 20
+       }
+   };
+var scrollFloorControl;
+//地图加载完成回调方法
 map.on('loadComplete', function () {
     //创建楼层(按钮型)，创建时请在地图加载后(loadComplete回调)创建。
-    groupControl = new fengmap.scrollGroupsControl(map, ctlOpt);
+    scrollFloorControl = new fengmap.FMScrollGroupsControl(map, scrollFloorCtlOpt);
 });
 ```
 
@@ -332,20 +323,24 @@ map.on('loadComplete', function () {
 
 ```javascript
 //楼层控制控件配置参数
-var ctlOpt = new fengmap.controlOptions({
-    position: fengmap.controlPositon.RIGHT_TOP,//默认在右下角
-    showBtnCount: 7,  //默认显示楼层的个数
-    //位置x,y的偏移量
-    offset: {
-        x: -20,
-        y: 20
-    }
-});
-var groupControl;
-//地图加载完成回掉方法
+var btnFloorCtlOpt = {
+      //默认在右下角
+      position: fengmap.FMControlPosition.RIGHT_TOP,
+      //初始楼层按钮显示个数配置。默认显示5层,其他的隐藏，可滚动查看
+      showBtnCount: 6,
+      //初始是否是多层显示，默认单层显示
+      allLayer: false,
+      //位置x,y的偏移量
+      offset: {
+          x: -20,
+          y: 20
+      }
+  };
+var btnFloorControl;
+//地图加载完成回调方法
 map.on('loadComplete', function () {
     //创建楼层(按钮型)，创建时请在地图加载后(loadComplete回调)创建。
-    groupControl = new fengmap.buttonGroupsControl(map, ctlOpt);
+    btnFloorControl = new fengmap.FMButtonGroupsControl(map, btnFloorCtlOpt);
 });
 ```
 
@@ -354,7 +349,9 @@ map.on('loadComplete', function () {
 ```javascript
 //通过楼层切换控件切换聚焦楼层时的回调函数
 //groupControl 即为楼层控件对象
-groupControl.onChange(function(groups,allLayer){
+ scrollFloorControl.onChange(function (groups, allLayer) {
+                console.log(groups);
+            });
     //groups 表示当前要切换的楼层ID数组,
     //allLayer表示当前楼层是单层状态还是多层状态。
     //...
@@ -365,27 +362,30 @@ groupControl.onChange(function(groups,allLayer){
 
 Fengmap JavaScript SDK 提供放大、缩小控件，放大、缩小控件按钮点击时会根据比例尺级别放大和缩小地图，并提供回调方法。
 
- 创建控件。参考代码如下：
+创建控件。参考代码如下：
 
 ```javascript
 //放大、缩小控件配置
-var ctlOpt1 = new fengmap.controlOptions({
-    position: fengmap.controlPositon.LEFT_TOP, //位置 左上角
-    //位置x,y的偏移量
-    offset: {
-        x: 20,
-        y: 60
-    }
-});
+ var zoomCtlOpt = {
+       //设置显示的位置为左上角
+       position: fengmap.FMControlPosition.LEFT_TOP,
+       //位置x,y的偏移量
+       offset: {
+           x: 10,
+           y: 60
+       },
+       //可设置自定义图片路径
+       //imgURL: './images/'
+   };
 //放大、缩小控件
-//map为FMMap对象，初始化需在地图加载后完成。
-var zoomControl = new fengmap.zoomControl(map, ctlOpt1);
+//创建放大缩小控件
+zoomControl = new fengmap.FMZoomControl(map, zoomCtlOpt);
 ```
 
 控件交互，通过按钮放大、缩小控件进行放大、缩小时，会回调当前的比例尺级别。
 
 ```javascript
-map.on('scaleLevelChanged', function (d) {
+map.on('scaleLevelChanged', function () {
     console.log('当前级别：', map.scaleLevel);
 });
 ```
@@ -398,14 +398,20 @@ Fengmap JavaScript SDK 提供单/多层楼层，通过该控件可操作地图�
 
 ```javascript
 //单/多层楼层控件配置
-var toolControl = new fengmap.toolControl(map,{
-    allLayer:false, //设置初始单楼层状态。
-    viewModeButtonNeeded:false, //设置为false,表示只显示楼层切换按钮。
-    //点击按钮的回调方法,返回type表示按钮类型,value表示对应的功能值
-    clickCallBack:function(type,value){
-        // console.log(type,value);
-    }
-});
+ var toolCtlOpt = {
+      position: fengmap.FMControlPosition.RIGHT_TOP,
+      //位置x,y的偏移量
+      offset: {
+          x: -20,
+          y: 20
+      },
+      //当楼层切换按钮存在时,设置初始默认-false表示显示单层状态，true表示显示多层状态,.
+      initGroups: false,
+      //设置为false表示不显示
+      groupsButtonNeeded: true
+  };
+//创建工具控件
+toolControl = new fengmap.FMToolControl(map, toolCtlOpt);
 ```
 
 ### 2D/3D切换控件
@@ -415,21 +421,26 @@ Fengmap JavaScript SDK 提供2D、3D切换控件，通过控件可操作地图�
 创建控件。参考代码如下：
 
 ```javascript
-//2D、3D控件配置
-var toolControl = new fengmap.toolControl(map,{
-    init2D:false,   //初始化2D模式
-    groupsButtonNeeded:false,   //设置为false表示只显示2D,3D切换按钮
-    //点击按钮的回调方法,返回type表示按钮类型,value表示对应的功能值
-    clickCallBack:function(type,value){
-        // console.log(type,value);
-    }
-});
+var toolCtlOpt = {
+    position: fengmap.FMControlPosition.RIGHT_TOP,
+    //位置x,y的偏移量
+    offset: {
+        x: -20,
+        y: 20
+    },
+    //初始化2D模式
+    init2D: false,
+    //设置为false表示不显示,即只显示楼层切换按钮
+    viewModeButtonNeeded: true
+};
+ //创建工具控件
+toolControl = new fengmap.FMToolControl(map, toolCtlOpt);
 ```
 
 ### 指北针控件
 
 Fengmap JavaScript SDK 提供指北针控件，通过开关设置其显示或隐藏，默认隐藏，并监听指北针点击事件。
-初始化指北针位置。参考代码如下：
+初始化指北针位置。在初始化地图属性时设置指北针控件相关属性，参考代码如下：
 
 ```javascript
 //初始化指北针位置
@@ -472,23 +483,29 @@ Fengmap JavaScript SDK 提供气泡信息框功能，根据传入的地图坐标
 
 ```javascript
 //信息框控件大小配置
-var ctlOpt = new fengmap.controlOptions({
-    mapCoord: {
-        //设置弹框的x轴
-        x: event.target.x,
-        //设置弹框的y轴
-        y: event.target.y,
-        //设置弹框位于的楼层
-        groupID: 1
-    },
-    //设置弹框的宽度
-    width: 200,
-    //设置弹框的高度
-    height: 100,
-    marginTop: 10,
-    //设置弹框的内容
-    content: '这是一个信息框'
-});
+var ctlOpt = {
+        //添加信息框的地图位置坐标
+        mapCoord: {
+            //设置弹框的x轴
+            x: target.coord.x,
+            //设置弹框的y轴
+            y: target.coord.y,
+            //控制信息框距离地图的高度
+            height: 2,
+            //设置弹框位于的楼层,当前聚焦楼层
+            groupID: target.groupID
+        },
+        //设置弹框的宽度
+        width: 200,
+        //设置弹框的高度px
+        height: 100,
+        //设置弹框的内容
+        content: '<a target="_bank" href="https://www.fengmap.com">这是一个独立信息框</a>',
+        closeCallBack: function () {
+            //信息窗点击关闭操作
+            console.log('信息窗关闭了！');
+        }
+    };
 ```
 
 显示气泡信息框。参考代码如下：
@@ -695,10 +712,7 @@ searchReq.name = 'APPLE'; //查询元素groupID=1,且元素name值为'APPLE'的�
 搜索分析对象执行query方法，传入分析参数对象，返回查询结果。代码如下所示：
 
 ```javascript
-searchAnalyser.query(searchReq, function(result) {
-    //result 为查询到的结果集。
-    console.log(result);
-});
+sortRes = searchAnalyser.getQueryResult(searchRequest,["SINGLE"],map);
 ```
 
 ## 周边检索
@@ -935,15 +949,16 @@ var lineStyle = {
      //是否开启平滑线功能
      smooth: true,
      //设置FMARROW线型线的颜色，十六进制颜色值
-     //godColor: '#FF0000',
+     godColor: '#FF0000',
      //设置FMARROW线型线边线的颜色,十六进制颜色值
-     //godEdgeColor: '#FF0000',
+     godEdgeColor: '#FF0000',
      //设置线的类型为导航线
      lineType: fengmap.FMLineType.FMARROW,
      //设置线上纹理贴图
-     lineStyle.mapUrl：'./images/dash.png',
+     mapUrl:'./images/dash.png'，
+     //设置导航线动画开关
      noAnimate: true
-                };
+    };
 ```
 
 添加线标注至对应层
@@ -1186,24 +1201,23 @@ dmLayer = map.getFMGroup(map.focusGroupID).getOrCreateLayer('dynmodel');
 创建domMarker图层并添加到指定楼层上面。
 
 ```javascript
- /* 添加模型 */
-            dmMarker = new fengmap.FMDynamicModel(map, {
-                //model路径
-                url: './glb/fengniao.glb',
-                //初始化模型展示比例
-                scale: 5,
-                //model坐标
-                coord: initCoord,
-                //更新过程回调
-                update: function () { },
-                //model加载完成回调函数
-                callback: function () {
-                console.log('动态模型加载完成回调！');
-                //开始播放模型对象的骨骼动画
-                dmMarker.startAction(dmMarker.getActionList()[0]);
-                }
-            });
-
+/* 添加模型 */
+dmMarker = new fengmap.FMDynamicModel(map, {
+    //model路径
+    url: './glb/fengniao.glb',
+    //初始化模型展示比例
+    scale: 5,
+    //model坐标
+    coord: initCoord,
+    //更新过程回调
+    update: function () { },
+    //model加载完成回调函数
+    callback: function () {
+    console.log('动态模型加载完成回调！');
+    //开始播放模型对象的骨骼动画
+    dmMarker.startAction(dmMarker.getActionList()[0]);
+    }
+});
 ```
 
 添加动态模型
@@ -1215,9 +1229,9 @@ dmLayer.addNodes(dmMarker);
 
 ## 定位坐标转换
 
-在使用真实的定位系统时，如：WIFI定位，蓝牙定位等，就需要将定位系统所返回的定位坐标转化为fengmap地图坐标，这样就可以在fengmap地图中去根据真实的定位点去实时的改变地图中的Marker的位置。实现定位的功能。
+在使用真实的定位系统时，如：WIFI 定位，蓝牙定位等，就需要将定位系统所返回的定位坐标转化为 fengmap 地图坐标，这样就可以在 fengmap 地图中去根据真实的定位点去实时的改变地图中的 Marker 的位置。实现定位的功能。
 
-Fengmap JavaScript SDK 中提供了一个专用于坐标转化的通用类fengmap.FMMapCoordTransformer类。它的应用逻辑是这样的，在定位系统中提取出定位区域矩形的4个角点。同时在fengmap地图中得到这4个角点对点的地图坐标。就可以实现定位坐标到地图坐标的转化。
+Fengmap JavaScript SDK 中提供了一个专用于坐标转化的通用类 fengmap.FMMapCoordTransformer 类。它的应用逻辑是这样的，在定位系统中提取出定位区域矩形的4个角点。同时在 fengmap 地图中得到这4个角点对点的地图坐标。就可以实现定位坐标到地图坐标的转化。
 
 ### 创建转换器
 
@@ -1252,11 +1266,11 @@ mapParas[3]={'x':13501983.572,'y':3658044.467};//Y轴终点地图坐标
 
 ### 路径规划
 
-Fengmap JavaScript SDK支持根据起点和终点坐标规划路线功能。
+Fengmap JavaScript SDK 支持根据起点和终点坐标规划路线功能。
 
 ### 初始化路径分析对象
 
-设置起、终点，在地图渲染后即loadComplete回调后，初始化路径分析对象。示例代码如下：
+设置起、终点，在地图渲染后即 loadComplete 回调后，初始化路径分析对象。示例代码如下：
 
 ```javascript
 //创建路径分析对象
@@ -1347,11 +1361,11 @@ if (naviAnalyser.analyzeNavi(naviCoords[0].groupID, naviCoords[0], naviCoords[1]
 
 ### 定位导航
 
-Fengmap JavaScript SDK 结合定位技术，可实现定位导航的功能。下面将就结合模拟定位点进行路径分析并模拟导航的功能以及真实导航展开说明。即导航类FMNavigation的使用说明。
+Fengmap JavaScript SDK 结合定位技术，可实现定位导航的功能。下面将就结合模拟定位点进行路径分析并模拟导航的功能以及真实导航展开说明。即导航类 FMNavigation 的使用说明。
 
 ### 模拟导航
 
-初始化导航对象，设置起始模拟点，在地图渲染后即loadComplete回调后，初始化路径分析对象。示例代码如下：
+初始化导航对象，设置起始模拟点，在地图渲染后即 loadComplete 回调后，初始化路径分析对象。示例代码如下：
 
 ```javascript
 // 地图加载完执行画导航路径
@@ -1415,7 +1429,7 @@ navi.on('walking', function(data) {
 });
 ```
 
-添加导航事件，导航中监听事件有导航中walking事件、导航完成complete事件、导航中跨层crossGroup事件。绑定事件示例如下：
+添加导航事件，导航中监听事件有导航中 walking 事件、导航完成 complete 事件、导航中跨层 crossGroup 事件。绑定事件示例如下：
 
 ```javascript
 // 设置导航中实时回调事件
@@ -1449,32 +1463,54 @@ navi.stop();
 
 ### 真实导航
 
-在使用真实的定位系统时，如：WIFI定位，蓝牙定位等，就需要将定位系统所返回的定位坐标转化为 Fengmap 地图坐标，这样就可以在fengmap地图中去根据真实的定位点去实时的改变地图中的Marker的位置。实现真实定位。示例如下：
+在使用真实的定位系统时，如：WIFI 定位，蓝牙定位等，就需要将定位系统所返回的定位坐标转化为 Fengmap 地图坐标，这样就可以在 fengmap 地图中去根据真实的定位点去实时的改变地图中的 Marker 的位置。实现真实定位。示例如下：
 
 ```javascript
 // 先创建FMNavigation对象
-var navi = new fengmap.FMNavigation({map: map})
+var navi = new fengmap.FMNavigation({
+    //地图对象
+    map: map，
+    //导航结果文字描述内容的语言类型参数
+    naviLanguage: fengmap.FMLanguageType.ZH,
+    //导航中路径规划模式, 支持最短路径、最优路径两种。默认为MODULE_SHORTEST, 最短路径。
+    naviMode: fengmap.FMNaviMode.MODULE_SHORTEST,
+    //导航中的路线规划梯类优先级, 默认为PRIORITY_DEFAULT
+    naviPriority: fengmap.FMNaviPriority.PRIORITY_DEFAULT,
+    //调用drawNaviLine绘制导航线时, 是否清除上次调用drawNaviLine绘制的导航线, 默认为true
+    autoClearNaviLine: true,
+     //导航线与楼层之间的高度偏移设置。默认是1。
+    lineMarkerHeight: 1.5,
+    // 设置导航线的样式
+    lineStyle: {
+        // 导航线样式
+        lineType: fengmap.FMLineType.FMARROW,
+        // 设置线的宽度
+        lineWidth: 6,
+        //设置线动画,false为动画
+        noAnimate: true
+               }
+    })
 // 如：定位坐标返回的坐标点
 var theCoord = { x: 12956609.56, y: 4852487.1, groupID: 1 };
 // 调用locate方法，此方法会触发walking事件
 // 此方法要按定位设置的频率来循环设置
 navi.locate(theCoord);
-// 监听navi对象的walking 事件
+//监听导航事件
 navi.on('walking', function(data) {
-    // 在返回的data中包括以下数据
-    /*
-    {
-        remain: 到终点的剩余距离,
-        walk: 已经走过的距离,
-        distance: 定位点的路线偏移距离,
-        distanceToNext: 是下一个转角处的距离,
-        angle: 当前路线与正北方向的角度,
-        index: 当前路段的索引,
-        point: 定位点在路径约束后的点坐标,
-        groupID, 当前的楼层id,
-        index: 当前路段的索引
-    }
-    */
+  // 当定位点偏离路径线大于约定的最大偏移距离时，进行路径重新规划
+  if (data.distance > minOffsetDis) {
+      //在最小和最大偏移距离之间，坐标点用原始定位坐标
+      data.point = currentCoord;
+  }
+  // 当剩余距离小于设置的距离终点的最小距离时，自动结束导航
+  if (data.remain < maxEndDistance || data.remain == 0) {
+      console.log('距离小于设置的距离终点的最小距离，导航自动结束');
+      //结束导航
+      document.getElementById('description').innerHTML = '导航结束!';
+      stopNavi();
+      document.getElementById('startBtn').classList.remove('active');
+      return;
+  }
 });
 ```
 
@@ -1485,27 +1521,27 @@ navi.on('walking', function(data) {
 Fengmap JavaScript SDK 提供创建天空盒用于在场景中实现模拟真实天空效果，支持时间设定，模拟24小时场景中的模型变化
 
 ```javascript
- //初始化天空盒
- skyEffect = new fengmap.FMSkyEffect(map);
- //天空盒配置设置
-    var options = {
-        scale: 500,     //天空效果大小比例,默认值为500
-        turbidity: 10,  //天空效果混乱度
-        rayleigh: 3,    //天空效果散射度
-        luminance: 1 //天空效果亮度
-    };
- skyEffect.setAttribute(options);
- //设定天空盒自动时间流动
- skyEffect.enableAutoTime(true);
- //设定天空和当前时间
- skyEffect.setTime(21);
+//初始化天空盒
+skyEffect = new fengmap.FMSkyEffect(map);
+//天空盒配置设置
+   var options = {
+       scale: 500,     //天空效果大小比例,默认值为500
+       turbidity: 10,  //天空效果混乱度
+       rayleigh: 3,    //天空效果散射度
+       luminance: 1 //天空效果亮度
+   };
+skyEffect.setAttribute(options);
+//设定天空盒自动时间流动
+skyEffect.enableAutoTime(true);
+//设定天空和当前时间
+skyEffect.setTime(21);
 ```
 
 ### 光效
 
 ### 渲染器
 
-Fengmap JavaScript SDK 提供一种具有bloom发光、阴影、SAO等特效的渲染器。支持场景中模型设置相关光效设置。
+Fengmap JavaScript SDK 提供一种具有 bloom 发光、阴影、SAO 等特效的渲染器。支持场景中模型设置相关光效设置。
 
 ```javascript
 effectRender = map.getEffectRenderer();//初始化渲染器对象
@@ -1532,20 +1568,20 @@ effectRender.enableShadow(true);//设置阴影
 
 ### 流光效果
 
-Fengmap JavaScript SDK 支持场景中添加流光线FMFlowLineMarker 是一种具有流动颜色、可配和发光特效使用、可自定义线宽的线形标注
+Fengmap JavaScript SDK 支持场景中添加流光线 FMFlowLineMarker 是一种具有流动颜色、可配和发光特效使用、可自定义线宽的线形标注
 
 ```javascript
 //流光线参数
 options = {
-            center: map.center,//流光线中心点坐标
-            lineWidth: 3,      //流光线宽度
-            color: "#f38912",  //流光线发光颜色
-            points:pnts,       //流光线顶点坐标
-            backgroundColor: "#0000FF", //流光线背景颜色
-            opacity: 1.0,      //流光线透明度
-            lineLength: 0.3,   //流线流光的长度，以最小两顶点距离为单位长度
-            speed: 1           //流线流光速度，取值范围0-1
-            };
+ center: map.center,//流光线中心点坐标
+ lineWidth: 3,      //流光线宽度
+ color: "#f38912",  //流光线发光颜色
+ points:pnts,       //流光线顶点坐标
+ backgroundColor: "#0000FF", //流光线背景颜色
+ opacity: 1.0,      //流光线透明度
+ lineLength: 0.3,   //流线流光的长度，以最小两顶点距离为单位长度
+ speed: 1           //流线流光速度，取值范围0-1
+ };
 flowLineMarker = new fengmap.FMFlowLineMarker(options);//初始化流光线
 flowLineLayer.addMarker(flowLineMarker);    //添加marker
 effectRender.addBloomList(flowLineLayer);   //将需要发光的图层添加到bloom发光列表
@@ -1553,13 +1589,28 @@ effectRender.addBloomList(flowLineLayer);   //将需要发光的图层添加到b
 
 ### 扫光效果
 
-Fengmap JavaScript SDK 支持场景中对于具备Standard材质的物体提供扫光效果，可按自定义矩形或环形进行扫光设置，并支持扫光速度设定
+Fengmap JavaScript SDK 支持场景中对于具备 Standard 材质的物体提供扫光效果，可按自定义矩形或环形进行扫光设置，并支持扫光速度设定
 
 ```javascript
-    sweepEffect = new fengmap.FMSweepEffect(map);//初始化扫光渲染器
-    particleEffect.particleUrl = "texture/snow.png"; //设定粒子贴图
-    particleEffect.particleCount = 0.1; //粒子数目 值域0-1
-    particleEffect.enable(effectFlag);  //启用粒子效果
+sweepEffect = new fengmap.FMSweepEffect(map);//初始化扫光渲染器
+//按照矩形扫光
+var optionRec = {
+    width: 10,
+    height: 200,
+    startPoint: new fm.Vector2(map.center.x - 210, map.center.y - 160),
+    endPoint: new fm.Vector2(map.center.x + 260, map.center.y + 220),
+    }
+sweepEffect.rectSweep(optionRec);   //按矩形扫光
+ //按圆环扫光
+var option2 = {
+    width: 20,
+    maxRadius: 300,
+    minRadius: 0,
+    x: map.center.x,
+    y: map.center.y
+}
+sweepEffect.annulusSweep(option2);  //按照圆环扫光
+sweepEffect.enable(true);           //启用扫光效果
 ```
 
 ### 粒子特效
@@ -1567,10 +1618,10 @@ Fengmap JavaScript SDK 支持场景中对于具备Standard材质的物体提供�
 Fengmap JavaScript SDK 提供向场景中添加粒子效果，支持粒子自定义等。用以实现场景内雨、雪等效果，示例如下：
 
 ```javascript
-    particleEffect = new fengmap.FMParticleEffect(map);//初始化对象
-    particleEffect.particleUrl = "texture/snow.png"; //设定粒子贴图
-    particleEffect.particleCount = 0.1; //粒子数目 值域0-1
-    particleEffect.enable(effectFlag);  //启用粒子效果
+particleEffect = new fengmap.FMParticleEffect(map);//初始化对象
+particleEffect.particleUrl = "texture/snow.png"; //设定粒子贴图
+particleEffect.particleCount = 0.1; //粒子数目 值域0-1
+particleEffect.enable(effectFlag);  //启用粒子效果
 ```
 
 ### 屏幕特效
